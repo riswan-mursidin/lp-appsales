@@ -40,7 +40,7 @@ h2 {
 }
 /* whyapp */
 #whyapp {
-  margin-top:2rem;
+  margin-top: 2rem;
   display: block;
   position: relative;
   text-align: center;
@@ -208,6 +208,12 @@ h2 {
 .nav-telp {
   padding-top: 0.5rem;
   background-color: var(--warna-kedua);
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.nav-web {
+  padding-top: 0.5rem;
+  background-color: rgb(0, 93, 180);
   border-radius: 5px;
   margin: 0.5rem;
 }
