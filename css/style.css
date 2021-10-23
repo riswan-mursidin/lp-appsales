@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+:root {
+  /* font */
+  --font-utama: "Poppins", sans-serif;
+  /* warna */
+  --warna-utama: #242424;
+  --warna-kedua: #ffb037;
+}
+
+html,
+body {
+  font-family: var(--font-utama);
+  margin: 0;
+  padding: 0;
+}
+/* Mobile */
+/* Jumbotron */
+#jumbotron {
+  background-image: url(../img/bg-jumbotron.png);
+  background-repeat: none;
+  background-size: cover;
+  height: 50vh;
+  padding-top: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#jumbotron h3 {
+  color: #fff;
+  font-size: smaller;
+}
+#jumbotron h1 {
+  padding-top: 1rem;
+}
+
+h1 {
+  color: var(--warna-kedua);
+}
+h2 {
+  color: var(--warna-kedua);
+}
+/* whyapp */
+#whyapp {
+  margin-top:2rem;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+#whyapp img {
+  display: none !important;
+}
+
+#whyapp::after {
+  content: "";
+  /*background-image: url(../img/bg-section1.png);*/
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0;
+  top: 0;
+  left: 2rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+/* tentang */
+#tentang {
+  text-align: center;
+}
+/* websales */
+#websales {
+  background-image: url(../img/bg-section2.png);
+  background-repeat: none;
+  background-size: cover;
+  color: #fff;
+  padding-top: 2rem;
+
+  text-align: center;
+}
+.ul-websales {
+  text-align: left;
+}
+.ket-tombol {
+  margin-top: 2rem;
+  color: var(--warna-kedua);
+}
+/* appsales */
+#appsales {
+  padding-top: 2rem;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+#appsales::after {
+  content: "";
+  /*background-image: url(../img/bg-section1.png);*/
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 2rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+/* warnaweb */
+#warnaweb {
+  background-color: var(--warna-utama);
+  background-repeat: none;
+  background-size: cover;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* berlanggan */
+#berlangganan {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+#berlangganan::after {
+  content: "";
+  background-image: url(../img/bg-section3.png);
+  background-color: #f4f4f4;
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 2rem;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+#berlangganan h2 {
+  font-weight: bolder;
+  color: var(--warna-utama);
+  font-size: 2.5rem;
+}
+#berlangganan p {
+  font-weight: 500;
+}
+
+.box {
+  width: max-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ffffff;
+  box-shadow: 0px 241px 169px rgba(0, 0, 0, 0.0348411),
+    0px 62.8739px 50.9486px rgba(0, 0, 0, 0.05),
+    0px 14.4541px 21.1614px rgba(0, 0, 0, 0.0651589),
+    0px -0.645544px 7.65367px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.harga-berlangganan {
+  background-color: var(--warna-kedua);
+  padding: 0.5rem;
+  border-radius: 1px 5px 1px 5px;
+  color: #fff;
+}
+
+/* faq */
+
+#faq {
+  background-color: var(--warna-utama);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#faq p {
+  color: #fff;
+}
+.accordion button {
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.accordion button::after {
+  border-radius: 10px;
+  background-color: var(--warna-kedua);
+}
+.accordion-item {
+  margin-top: 1rem;
+}
+
+/* footer */
+#footer {
+  background-color: #c9c9c9;
+  padding: 1rem;
+  margin-bottom: 110px;
+}
+
+/* navbottom */
+#navbottom {
+  padding-top: 1rem;
+  background-color: var(--warna-utama);
+  color: #fff;
+}
+.nav-whatsapp {
+  padding-top: 0.5rem;
+  background-color: green;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.nav-telp {
+  padding-top: 0.5rem;
+  background-color: var(--warna-kedua);
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.navfloat a {
+  text-decoration: none;
+  color: #fff;
+}
+/* desktop */
+@media (min-width: 768px) {
+  #jumbotron h3 {
+    font-size: 24px;
+  }
+  #jumbotron {
+    height: 60vh;
+    margin-bottom: 8rem;
+  }
+  #jumbotron h1 {
+    padding-top: 4rem;
+  }
+  /* whyapp */
+  #whyapp img {
+    display: block !important;
+  }
+  #whyapp {
+    margin-top: 5rem;
+    text-align: left;
+  }
+  #whyapp::after {
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: 90%;
+    z-index: -1;
+  }
+  /* tentang */
+  #tentang {
+    text-align: left;
+  }
+  /* websales */
+  #websales {
+    text-align: left;
+  }
+  /* appsales */
+  #appsales::after {
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: 90%;
+    z-index: -1;
+  }
+  #appsales {
+    text-align: left;
+  }
+  /* berlangganan */
+  /* appsales */
+  #berlanggan::after {
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: 90%;
+    z-index: -1;
+  }
+  #berlangganan h2 {
+    font-weight: bolder;
+    color: var(--warna-utama);
+    font-size: 3rem;
+  }
+}
